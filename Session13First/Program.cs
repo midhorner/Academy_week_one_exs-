@@ -11,8 +11,7 @@ namespace Session13First
             string color;
             double buckets;
             int coverage;
-            int cost;
-            
+            int cost;            
 
             Console.WriteLine("What is the radius of your circle in feet?");
             radius = Convert.ToDouble(Console.ReadLine());
@@ -21,28 +20,28 @@ namespace Session13First
        
             Console.WriteLine("What color paint would you like to use?");
             color = Console.ReadLine();
-            if (color == "red")
+            if (color.ToLower() == "red")
             {
                 coverage = 100;
                 cost = 25;
                 buckets = Math.Ceiling(circleArea / coverage);
                 Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
-            if (color == "blue")
+            if (color.ToLower() == "blue")
             {
                 coverage = 120;
                 cost = 28;
                 buckets = Math.Ceiling(circleArea / coverage);
                 Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
-            if (color == "green")
+            if (color.ToLower() == "green")
             {
                 coverage = 90;
                 cost = 33;
                 buckets = Math.Ceiling(circleArea / coverage);
                 Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
-            if (color == "yellow")
+            if (color.ToLower() == "yellow")
             {
                 coverage = 70;
                 cost = 22;
@@ -50,6 +49,32 @@ namespace Session13First
                 Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
 
+            switch (color.ToLower())
+            {
+                case "red":
+                    coverage = 100;
+                    cost = 25;
+                    break;
+                case "blue":
+                    coverage = 120;
+                    cost = 28;
+                    break;
+                case "green":
+                    coverage = 90;
+                    cost = 33;
+                    break;
+                case "yellow":
+                    coverage = 70;
+                    cost = 22;
+                    break;
+                default:
+                    coverage = 100;
+                    cost = 25;
+                    break;
+            }
+
+            buckets = Math.Ceiling(circleArea / coverage);
+            Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
 
 
 
