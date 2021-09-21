@@ -7,6 +7,24 @@ namespace Session13First
         static void Main(string[] args)
         {
 
+            string ans = "yes";
+            int counter = 0;
+            int innerCounter;
+            while(ans == "yes" && counter < 3)
+            {
+                Console.WriteLine("Should I keep Going: yes or no?");
+                ans = Console.ReadLine();
+                counter = counter + 1;
+                Console.WriteLine($"This loop has looped for {counter} loop(s).");
+                innerCounter = 0;
+                while (innerCounter < 10)
+                {
+                    innerCounter = innerCounter + 1;
+                    Console.WriteLine("innerloop! " + innerCounter);
+                    
+                }
+            }
+
             double radius;
             string color;
             double buckets;
@@ -20,6 +38,7 @@ namespace Session13First
        
             Console.WriteLine("What color paint would you like to use?");
             color = Console.ReadLine();
+
             if (color.ToLower() == "red")
             {
                 coverage = 100;
