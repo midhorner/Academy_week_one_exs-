@@ -8,33 +8,46 @@ namespace Session13First
         {
 
             double radius;
-            Console.WriteLine("What is the radius of your circle?");
-            radius = Convert.ToDouble(Console.ReadLine());
-            double circleArea = Math.PI * radius * radius;
-            Console.WriteLine($"The area of your circle is {circleArea}");
             string color;
             double buckets;
+            int coverage;
+            int cost;
+            
+
+            Console.WriteLine("What is the radius of your circle in feet?");
+            radius = Convert.ToDouble(Console.ReadLine());
+            double circleArea = Math.PI * radius * radius;
+            Console.WriteLine($"The area of your circle is {circleArea} feet.");
+       
             Console.WriteLine("What color paint would you like to use?");
             color = Console.ReadLine();
             if (color == "red")
             {
-                buckets = Math.Ceiling(circleArea / 100);
-                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * 25} dollars.");
+                coverage = 100;
+                cost = 25;
+                buckets = Math.Ceiling(circleArea / coverage);
+                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
             if (color == "blue")
             {
-                buckets = Math.Ceiling(circleArea / 120);
-                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * 28} dollars.");
+                coverage = 120;
+                cost = 28;
+                buckets = Math.Ceiling(circleArea / coverage);
+                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
             if (color == "green")
             {
-                buckets = Math.Ceiling(circleArea / 90);
-                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * 33} dollars.");
+                coverage = 90;
+                cost = 33;
+                buckets = Math.Ceiling(circleArea / coverage);
+                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
             if (color == "yellow")
             {
-                buckets = Math.Ceiling(circleArea / 70);
-                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * 22} dollars.");
+                coverage = 70;
+                cost = 22;
+                buckets = Math.Ceiling(circleArea / coverage);
+                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
             }
 
 
