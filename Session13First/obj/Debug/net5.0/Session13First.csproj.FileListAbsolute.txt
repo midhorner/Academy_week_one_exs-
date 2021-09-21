@@ -1,0 +1,16 @@
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\Session13First.exe
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\Session13First.deps.json
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\Session13First.runtimeconfig.json
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\Session13First.runtimeconfig.dev.json
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\Session13First.dll
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\ref\Session13First.dll
+C:\Users\Drew\source\repos\Session13First\Session13First\bin\Debug\net5.0\Session13First.pdb
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.csproj.AssemblyReference.cache
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.AssemblyInfoInputs.cache
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.AssemblyInfo.cs
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.csproj.CoreCompileInputs.cache
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.dll
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\ref\Session13First.dll
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.pdb
+C:\Users\Drew\source\repos\Session13First\Session13First\obj\Debug\net5.0\Session13First.genruntimeconfig.cache
