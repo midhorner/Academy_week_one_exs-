@@ -7,10 +7,10 @@ namespace Session13First
         static void Main(string[] args)
         {
 
-            string ans = "yes";
+            /*string ans = "yes";
             int counter = 0;
             int innerCounter;
-            while(ans == "yes" && counter < 3)
+            while(ans == "yes")
             {
                 Console.WriteLine("Should I keep Going: yes or no?");
                 ans = Console.ReadLine();
@@ -23,19 +23,19 @@ namespace Session13First
                     Console.WriteLine("innerloop! " + innerCounter);
                     
                 }
-            }
+            }*/
 
             double radius;
             string color;
             double buckets;
             int coverage;
-            int cost;            
+            int cost;
+            double circleArea;
 
             Console.WriteLine("What is the radius of your circle in feet?");
             radius = Convert.ToDouble(Console.ReadLine());
-            double circleArea = Math.PI * radius * radius;
-            Console.WriteLine($"The area of your circle is {circleArea} feet.");
-       
+            circleArea = Math.PI * radius * radius;
+            Console.WriteLine($"The area of your circle is {circleArea} feet.");       
             Console.WriteLine("What color paint would you like to use?");
             color = Console.ReadLine();
 
@@ -44,7 +44,7 @@ namespace Session13First
                 coverage = 100;
                 cost = 25;
                 buckets = Math.Ceiling(circleArea / coverage);
-                Console.WriteLine($"You need {buckets} buckets of {color} paint. It will cost {buckets * cost} dollars.");
+                Console.WriteLine($"You need {buckets} buckets of {color} paint. \n It will cost {buckets * cost} dollars.");
             }
             if (color.ToLower() == "blue")
             {
